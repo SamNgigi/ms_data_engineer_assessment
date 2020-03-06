@@ -1,2 +1,2 @@
-# ms_data_engineer_assessment
-Data Engineer Assessment MS
+# Data Engineer Assessment
+This repo contains the technical assessment for the data engineer role moringa school
