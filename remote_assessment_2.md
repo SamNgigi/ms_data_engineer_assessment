@@ -3,9 +3,8 @@
 Hogwarts School of Magic has been storing data about their courses and students in spreadsheet, they need a data engineer to store this information in a relational database and create a dashboard for them with basic insights such as total students, dropouts etc. There are things a magic wand can't fix.
 
 ## Description
-The datasets provided has the following information:
-
-    - Curriculum (the course modVules)
+The dataset provided has the following information:
+    - Curriculum (the course modules)
     - Classes with their start and end dates
     - applications
     - students enrollments (students in each module)
