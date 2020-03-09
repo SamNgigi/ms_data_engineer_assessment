@@ -1,0 +1,286 @@
+name,email,phone,score,attendance,passed,dropped_reason
+Francesca Walsh,francescawalsh@yahoo.com,+44(0)1214960929,76,85,True,
+Marilyn Stanley,marilynstanley@yahoo.com,(0118) 4960414,82,78,True,
+Clare West,clarewest@hotmail.com,(0116)4960131,92,91,True,
+Janet Harris,janetharris@yahoo.com,+44113 4960775,57,99,False,Low score
+Harry Mason,harrymason@yahoo.com,+448081570097,68,100,True,
+Kirsty Allen,kirstyallen@hotmail.com,0909 879 0415,60,77,True,
+Derek Bowen,derekbowen@gmail.com,01314960888,93,78,True,
+Gordon Wright,gordonwright@yahoo.com,0118 496 0251,81,73,True,
+Francesca Farmer,francescafarmer@hotmail.com,+44(0)1632960004,84,93,True,
+Dale Goodwin,dalegoodwin@yahoo.com,+441632 960860,60,83,True,
+Marian Smith,mariansmith@yahoo.com,+44(0)1214960647,100,85,True,
+Nathan Smith,nathansmith@yahoo.com,(0113) 4960175,86,71,True,
+Russell Harvey,russellharvey@hotmail.com,(020)74960545,50,71,False,Low score
+Natalie Hammond,nataliehammond@yahoo.com,01614960590,64,89,True,
+Laura Smith,laurasmith@hotmail.com,+44(0)1914960470,89,80,True,
+Ricky Holland,rickyholland@gmail.com,+44141 496 0872,96,81,True,
+Mark Clark,markclark@hotmail.com,+44(0)1614960679,91,67,False,Low attendance
+Pauline Brown,paulinebrown@yahoo.com,+44(0)1174960555,95,97,True,
+Kate Morgan,katemorgan@yahoo.com,0116 496 0958,60,76,True,
+Adrian Kelly,adriankelly@gmail.com,+44131 4960297,91,70,True,
+Christian Walker,christianwalkerO@gmail.com,020 74960989,73,73,True,
+Ross Ward,rossward@yahoo.com,+44(0)1134960410,74,98,True,
+Mitchell Dale,mitchelldale@hotmail.com,+4429 2018 0999,83,94,True,
+Barbara Hall,barbarahall@hotmail.com,+44117 4960109,89,86,True,
+Wendy Hughes,wendyhughes@gmail.com,0909 8790307,85,97,True,
+Guy Doyle,guydoyle@gmail.com,02074960724,63,99,True,
+Ruth Murphy,ruthmurphy@yahoo.com,+441632 960 567,55,65,False,Low score and Low attendance
+Patrick Brown,patrickbrown@gmail.com,(0161) 496 0680,97,82,True,
+Leigh Patel,leighpatel@yahoo.com,+44141 496 0683,88,66,False,Low attendance
+Mathew Sullivan,mathewsullivan@gmail.com,+44191 4960445,57,78,False,Low score
+Lynne Bishop,lynnebishop@gmail.com,+44808 1570793,70,88,True,
+Gerald Blackburn,geraldblackburn@gmail.com,0909 8790557,84,82,True,
+Reece Kay,reecekay@gmail.com,(0909) 879 0912,72,100,True,
+Sian Kirby,siankirby@yahoo.com,0113 4960099,92,85,True,
+Gemma Hamilton,gemmahamilton@hotmail.com,+44(0)29 2018 0367,62,76,True,
+Jennifer Greenwood,jennifergreenwood@yahoo.com,+44(0)1914960526,58,88,False,Low score
+Bradley Edwards,bradleyedwards@gmail.com,+44113 496 0282,80,89,True,
+Carole Abbott,caroleabbott@hotmail.com,+44116 4960986,99,99,True,
+Matthew Miller,matthewmiller@yahoo.com,+44118 496 0880,71,98,True,
+Clifford Coleman,cliffordcoleman@hotmail.com,(0161) 496 0547,52,96,False,Low score
+Andrew Holmes,andrewholmes@yahoo.com,+44(0)151 496 0702,89,89,True,
+Kerry Rogers,kerryrogers@gmail.com,+44(0)808 157 0385,63,88,True,
+Benjamin Saunders,benjaminsaunders@yahoo.com,+441144960036,79,75,True,
+Glen Joyce,glenjoyce@yahoo.com,+44(0)909 8790691,75,81,True,
+Fiona Cunningham,fionacunningham@hotmail.com,+441164960259,67,87,True,
+Leigh Phillips,leighphillips@hotmail.com,+44151 4960501,94,73,True,
+Andrew Blake,andrewblake@hotmail.com,+441632960861,89,98,True,
+Michelle Armstrong,michellearmstrong@hotmail.com,+44114 4960649,53,93,False,Low score
+Leah Williamson,leahwilliamson@yahoo.com,+44(0)29 2018 0671,73,71,True,
+Emily Myers,emilymyers@gmail.com,0808 157 0508,84,99,True,
+Vincent Slater,vincentslater@yahoo.com,+44115 496 0607,62,92,True,
+Adrian Miles,adrianmiles@gmail.com,+44(0)1632 960 325,83,90,True,
+Thomas Lawson,thomaslawson@gmail.com,+44808 1570842,63,87,True,
+Ian Stephens,ianstephens@hotmail.com,(0114)4960059,68,77,True,
+George Andrews,georgeandrews@gmail.com,+44(0)116 496 0428,54,85,False,Low score
+Alison Reeves,alisonreeves@gmail.com,+44(0)1632960197,84,98,True,
+Robin Rees,robinrees@yahoo.com,(0116)4960927,83,66,False,Low attendance
+Sian Gardner,siangardner@yahoo.com,+441134960725,83,68,False,Low attendance
+Hilary Evans,hilaryevans@gmail.com,(01632) 960 209,99,90,True,
+Adrian Moore,adrianmoore@yahoo.com,0306 9990975,67,66,False,Low attendance
+Benjamin James,benjaminjames@yahoo.com,+44118 496 0049,63,71,True,
+Gerard Ryan,gerardryan@gmail.com,+44(0)808 1570456,87,99,True,
+Emily Potter,emilypotter@gmail.com,+44141 496 0244,86,95,True,
+Shirley Smith,shirleysmith@gmail.com,01632 960 331,73,88,True,
+Antony Smith,antonysmith@hotmail.com,+44(0)1144960957,52,86,False,Low score
+Charlene Manning,charlenemanning@gmail.com,(0115) 4960569,84,79,True,
+Shaun Patel,shaunpatel@hotmail.com,(0113)4960946,65,98,True,
+Jayne Reeves,jaynereeves@yahoo.com,(029) 2018721,71,66,False,Low attendance
+Christian Clark,christianclark@yahoo.com,(028) 9018 0735,81,65,False,Low attendance
+Jean Brown,jeanbrown@gmail.com,01134960301,84,97,True,
+Jessica Barrett,jessicabarrett@hotmail.com,+44(0)116 496 0504,73,86,True,
+William Wilson,williamwilson@hotmail.com,+44121 496 0623,94,73,True,
+Lee Moss,leemoss@yahoo.com,+44(0)1164960772,53,75,False,Low score
+Paige Forster,paigeforster@hotmail.com,01154960680,57,67,False,Low score and Low attendance
+Debra Jones,debrajones@yahoo.com,+44(0)115 496 0737,52,98,False,Low score
+Daniel McDonald,danielmcdonald@gmail.com,+44808 157 0871,70,72,True,
+Natasha Rogers,natasharogers@gmail.com,(01632) 960 661,96,90,True,
+Diana Jones,dianajones@gmail.com,01314960433,85,65,False,Low attendance
+Sarah Howard,sarahhoward@gmail.com,0161 4960137,75,90,True,
+Peter Rogers,peterrogers@gmail.com,(0151) 4960218,60,99,True,
+Pamela Thomas,pamelathomas@hotmail.com,(0808) 1570473,68,72,True,
+Eric White,ericwhite@gmail.com,0909 8790686,63,98,True,
+Brandon Fraser,brandonfraser@hotmail.com,+44116 496 0533,63,67,False,Low attendance
+Arthur Nash,arthurnash@gmail.com,+441164960786,51,89,False,Low score
+Hazel Ali,hazelali@gmail.com,09098790285,96,77,True,
+Eileen Smith,eileensmith@hotmail.com,+44(0)191 4960568,60,89,True,
+Joanna Bray,joannabray@yahoo.com,+449098790099,63,73,True,
+Bethan Ellis,bethanellis@hotmail.com,+442074960214,54,88,False,Low score
+Angela Gallagher,angelagallagher@gmail.com,+449098790884,97,70,True,
+Peter Holden,peterholden@yahoo.com,(0116) 4960546,87,100,True,
+Jade Johnson,jadejohnson@hotmail.com,020 7946 0488,60,82,True,
+Suzanne Evans,suzanneevans@yahoo.com,+44115 496 0711,66,81,True,
+Cameron Holmes,cameronholmes@yahoo.com,(028)9018753,71,75,True,
+Lucy Collins,lucycollins@gmail.com,+44191 4960856,52,68,False,Low score and Low attendance
+Gareth Stewart,garethstewart@hotmail.com,(0116) 496 0636,73,84,True,
+Dale Hill,dalehill@gmail.com,01174960196,51,84,False,Low score
+Shane White,shanewhite@gmail.com,(0306) 9990333,50,99,False,Low score
+Clive Hunt,clivehunt@gmail.com,0118 4960835,84,99,True,
+Denis Bartlett,denisbartlett@gmail.com,(0151) 496 0050,59,77,False,Low score
+Debra James,debrajames@hotmail.com,(01632) 960 157,62,65,False,Low attendance
+Craig Thomson,craigthomson@gmail.com,01414960467,75,95,True,
+Sara Butler,sarabutler@yahoo.com,+441414960264,72,97,True,
+Anthony Jones,anthonyjones@yahoo.com,+44(0)115 4960301,99,95,True,
+Linda Freeman,lindafreeman@yahoo.com,(0161) 4960115,52,99,False,Low score
+Holly Hutchinson,hollyhutchinson@gmail.com,+44(0)1144960828,81,100,True,
+Carl Wilson,carlwilson@hotmail.com,+44(0)9098790829,68,81,True,
+Sian Bennett,sianbennett@hotmail.com,+441134960458,65,83,True,
+Kenneth Richardson,kennethrichardson@hotmail.com,+44306 9990586,50,94,False,Low score
+Shannon Walker,shannonwalker@yahoo.com,(0115)4960307,50,69,False,Low score and Low attendance
+Kayleigh Williams,kayleighwilliams@gmail.com,(020)74960532,92,94,True,
+Paul Rowe,paulrowe@hotmail.com,(0118) 496 0617,80,80,True,
+Vincent Brown,vincentbrown@hotmail.com,+4428 9018310,96,81,True,
+Carol Stevens,carolstevens@yahoo.com,(0113)4960875,89,69,False,Low attendance
+Emily Porter,emilyporter@gmail.com,+44(0)909 8790725,63,81,True,
+Jasmine Roberts,jasmineroberts@yahoo.com,+44(0)1214960246,72,92,True,
+Amber Stone,amberstone@hotmail.com,+44141 496 0404,99,95,True,
+Gregory Smith,gregorysmith@hotmail.com,028 9018230,69,70,True,
+Benjamin Robson,benjaminrobson@yahoo.com,0114 4960059,71,70,True,
+Gillian White,gillianwhite@yahoo.com,(0191)4960333,59,99,False,Low score
+Simon Jenkins,simonjenkins@gmail.com,+44(0)289018650,100,88,True,
+Leslie Simmons,lesliesimmons@gmail.com,+44116 496 0196,98,68,False,Low attendance
+Joan Foster,joanfoster@hotmail.com,+44(0)306 9990162,72,88,True,
+Anne Rogers,annerogers@gmail.com,0131 4960229,83,90,True,
+Jordan Daniels,jordandaniels@gmail.com,08081570877,56,92,False,Low score
+Simon Rogers,simonrogers@hotmail.com,0117 496 0294,88,90,True,
+Scott Taylor,scotttaylor@gmail.com,(0306)9990616,78,94,True,
+John Jones,johnjones@yahoo.com,01414960627,60,98,True,
+Phillip Bray,phillipbray@hotmail.com,+441184960144,60,68,False,Low attendance
+Teresa Jones,teresajones@gmail.com,(0141)4960032,70,95,True,
+Garry Thomas,garrythomas@gmail.com,+4420 74960464,99,92,True,
+Oliver Murray,olivermurray@gmail.com,(0808)1570245,79,74,True,
+Georgia Iqbal,georgiaiqbal@hotmail.com,+44(0)151 4960680,70,71,True,
+Clive Ali,cliveali@hotmail.com,(0306)9990958,64,98,True,
+Lawrence Lamb,lawrencelamb@yahoo.com,+44(0)306 9990106,94,89,True,
+Nathan Clarke,nathanclarke@hotmail.com,+44(0)161 496 0711,58,72,False,Low score
+Joanna Wood,joannawood@gmail.com,(020) 74960251,63,94,True,
+Jason Butler,jasonbutler@yahoo.com,0141 4960674,52,69,False,Low score and Low attendance
+Nicholas Foster,nicholasfoster@yahoo.com,+441314960739,84,99,True,
+Natalie Pearce,nataliepearce@hotmail.com,+44113 4960108,71,83,True,
+Gareth Powell,garethpowellh@gmail.com,+44(0)118 496 0201,100,70,True,
+George Warren,georgewarren@hotmail.com,+441632 960213,82,83,True,
+David Chan,davidchan@gmail.com,+44(0)115 4960103,83,96,True,
+Connor McDonald,connormcdonald@hotmail.com,+441164960053,70,68,False,Low attendance
+Amelia Green,ameliagreen@yahoo.com,+44(0)2074960067,100,77,True,
+Gerald Norris,geraldnorris@hotmail.com,(029) 2018943,83,93,True,
+Leigh Willis,leighwillis@hotmail.com,+4429 2018 0047,84,70,True,
+Charlie Davison,charliedavison@gmail.com,01214960546,96,86,True,
+Lisa Ahmed,lisaahmed@gmail.com,01632960805,99,97,True,
+Robin Hancock,robinhancock@gmail.com,(0113) 4960539,79,87,True,
+Alexander Richardson,alexanderrichardson@hotmail.com,01184960716,89,71,True,
+Sally Johnston,sallyjohnston@hotmail.com,+44191 496 0873,76,90,True,
+Joanne West,joannewest@gmail.com,+4428 9018022,84,93,True,
+Stephanie Andrews,stephanieandrews@hotmail.com,01514960684,70,77,True,
+Rosie Whitehead,rosiewhitehead@hotmail.com,(0808)1570022,62,67,False,Low attendance
+Andrea Mason,andreamason@gmail.com,+44(0)1514960663,56,97,False,Low score
+Sally Buckley,sallybuckley@hotmail.com,+44(0)191 4960243,78,88,True,
+Abbie Wright,abbiewright@gmail.com,0131 496 0265,91,66,False,Low attendance
+Amy Watkins,amywatkins@yahoo.com,+44289018411,86,96,True,
+Zoe Dixon,zoedixon@hotmail.com,(0141)4960745,76,68,False,Low attendance
+Ian Cunningham,iancunningham@yahoo.com,(0114) 496 0742,50,97,False,Low score
+Albert Jarvis,albertjarvis@hotmail.com,01632960824,98,97,True,
+Joe Green,joegreen@yahoo.com,+44118 496 0905,97,83,True,
+Margaret Brown,margaretbrown@hotmail.com,+441214960060,96,94,True,
+Linda Brown,lindabrown@hotmail.com,(0117) 496 0288,72,72,True,
+Mandy Evans,mandyevans@gmail.com,+448081570559,50,90,False,Low score
+Ryan Byrne,ryanbyrne@yahoo.com,0306 999 0153,68,86,True,
+Ian Bishop,ianbishop@yahoo.com,+44118 4960840,64,79,True,
+Philip Rose,philiprose@hotmail.com,0116 496 0065,50,78,False,Low score
+Thomas Morgan,thomasmorganH@yahoo.com,+44131 4960237,88,68,False,Low attendance
+Marc Dickinson,marcdickinson@hotmail.com,+449098790715,95,91,True,
+Ryan Patel,ryanpatel@gmail.com,+44(0)114 496 0968,81,71,True,
+Thomas Hill,thomashill@yahoo.com,+44(0)1632 960 049,75,71,True,
+Patricia Hanson,patriciahanson@yahoo.com,0121 496 0908,100,91,True,
+Frederick Bevan,frederickbevan@gmail.com,(0115)4960979,58,92,False,Low score
+Geoffrey Jackson,geoffreyjackson@gmail.com,(0909)8790692,56,86,False,Low score
+Mathew Harris,mathewharris@yahoo.com,(0306) 999 0905,57,80,False,Low score
+Craig Humphries,craighumphries@gmail.com,+44114 4960923,87,94,True,
+Geoffrey Hodgson,geoffreyhodgson@hotmail.com,(0909) 8790184,62,94,True,
+Toby Evans,tobyevans@hotmail.com,01914960982,65,88,True,
+Beth Rowe,bethrowe@gmail.com,(028) 9018 0454,92,70,True,
+Diane Vaughan,dianevaughan@hotmail.com,(0114)4960887,84,81,True,
+Stewart Clarke,stewartclarke@hotmail.com,(020) 74960391,60,81,True,
+Frank Carpenter,frankcarpenter@hotmail.com,+441514960322,77,75,True,
+Gerard Shaw,gerardshaw@yahoo.com,0115 4960579,53,99,False,Low score
+Clive Moore,clivemoore@gmail.com,01314960123,51,74,False,Low score
+Chloe Clark,chloeclark@yahoo.com,+443069990426,96,75,True,
+Debra Fry,debrafry@gmail.com,+44(0)121 496 0324,53,96,False,Low score
+Georgina Lamb,georginalamb@hotmail.com,(0306) 999 0799,69,66,False,Low attendance
+Ashley Berry,ashleyberry@gmail.com,+44(0)116 496 0613,82,65,False,Low attendance
+Sandra Bell,sandrabell@gmail.com,+44(0)114 4960290,97,90,True,
+Jeremy Cole,jeremycole@yahoo.com,+443069990696,90,93,True,
+Joan Robinson,joanrobinson@gmail.com,0117 4960852,72,84,True,
+Ruth Williams,ruthwilliams@hotmail.com,+441164960775,65,81,True,
+Ashleigh Davidson,ashleighdavidson@gmail.com,(0116) 496 0742,60,81,True,
+Molly Riley,mollyriley@hotmail.com,(0131) 4960601,69,88,True,
+Adrian Jones,adrianjones1@yahoo.com,(0113) 496 0398,94,69,False,Low attendance
+Alex King,alexking@hotmail.com,0141 496 0456,77,90,True,
+Caroline Edwards,carolineedwards@hotmail.com,+44(0)121 4960216,95,89,True,
+Kenneth Field,kennethfield@gmail.com,(0114) 496 0768,66,79,True,
+Holly Grant,hollygrant@gmail.com,0113 496 0126,99,80,True,
+Elliot Clarke,elliotclarke@yahoo.com,+44(0)114 496 0749,64,72,True,
+Adrian Davis,adriandavis@gmail.com,0191 4960214,100,98,True,
+Teresa Lowe,teresalowe@yahoo.com,(0117)4960020,62,85,True,
+Margaret Lee,margaretlee@yahoo.com,(020) 74960243,61,88,True,
+Wayne Bruce,waynebruce@hotmail.com,(0114) 4960206,71,91,True,
+Rebecca Smith,rebeccasmith@hotmail.com,+44(0)1154960685,98,88,True,
+Hazel Bartlett,hazelbartlett@hotmail.com,(0131)4960090,92,85,True,
+Dean Kelly,deankelly@hotmail.com,+441632 960 762,56,73,False,Low score
+Suzanne Johnson,suzannejohnson@yahoo.com,(028) 9018 0001,54,94,False,Low score
+Hugh Hanson,hughhanson@yahoo.com,(0115) 4960655,71,74,True,
+Nicole Little,nicolelittle@hotmail.com,+44(0)292018698,60,96,True,
+Clifford Sims,cliffordsims@yahoo.com,+44131 4960477,54,65,False,Low score and Low attendance
+Adrian Jones,adrianjonesV@hotmail.com,01514960003,53,96,False,Low score
+Jill Edwards,jilledwards@yahoo.com,+44(0)1514960262,76,72,True,
+Anthony Wilkinson,anthonywilkinson@gmail.com,0161 496 0546,99,65,False,Low attendance
+Gordon Morrison,gordonmorrisona@hotmail.com,(0117) 4960533,91,87,True,
+Frances Price,francesprice@gmail.com,+44808 1570974,82,90,True,
+Allan Murphy,allanmurphy@hotmail.com,+44118 496 0453,83,68,False,Low attendance
+Lorraine Williams,lorrainewilliams@gmail.com,029 2018 0725,60,75,True,
+Sam Bentley,sambentley@yahoo.com,+44(0)114 496 0733,85,92,True,
+Darren Davies,darrendavies@yahoo.com,(0191) 496 0063,76,77,True,
+Georgina Bruce,georginabruce@hotmail.com,(020) 7496 0385,95,76,True,
+Trevor Begum,trevorbegum@hotmail.com,01184960722,72,87,True,
+Kerry Wilson,kerrywilson@gmail.com,+44(0)1632960855,51,96,False,Low score
+Deborah Clark,deborahclark@hotmail.com,(0115) 496 0727,77,74,True,
+Diane Wallace,dianewallace@yahoo.com,01174960054,92,77,True,
+Terry Foster,terryfoster@yahoo.com,+44(0)116 496 0241,58,86,False,Low score
+Sean Taylor,seantaylor@yahoo.com,+44(0)121 4960413,98,86,True,
+Emma Stone,emmastone@yahoo.com,+44117 496 0307,79,88,True,
+Cameron Dean,camerondean@yahoo.com,+44121 4960998,55,80,False,Low score
+Allan Curtis,allancurtis@gmail.com,+441314960296,53,81,False,Low score
+Jade Wilkinson,jadewilkinson@hotmail.com,+4428 9018 0198,98,94,True,
+Alexander O'Donnell,alexandero'donnell@hotmail.com,(020)74960690,99,66,False,Low attendance
+Naomi Moore,naomimoore@gmail.com,+4429 2018463,87,85,True,
+Marc Scott,marcscott@hotmail.com,(0191) 4960978,74,92,True,
+Allan Glover,allanglover@yahoo.com,0116 496 0397,100,72,True,
+Katy Hawkins,katyhawkins@hotmail.com,0292018948,100,66,False,Low attendance
+Claire Lowe,clairelowe@hotmail.com,+44(0)141 496 0099,75,91,True,
+Dorothy Thomas,dorothythomas@yahoo.com,(0117)4960814,97,73,True,
+Stephen Pearson,stephenpearson@yahoo.com,0131 4960325,64,72,True,
+Arthur Brooks,arthurbrooks@gmail.com,01184960084,89,88,True,
+Amy Bull,amybull@hotmail.com,(0151) 496 0314,66,81,True,
+Chloe Phillips,chloephillips@gmail.com,(0114) 496 0630,69,68,False,Low attendance
+Glen Allen,glenallen@hotmail.com,+44909 8790569,77,94,True,
+Mohammad Welch,mohammadwelch@hotmail.com,(0306) 9990847,50,74,False,Low score
+Lynda Campbell,lyndacampbell@yahoo.com,+44118 496 0471,81,69,False,Low attendance
+Maria Parsons,mariaparsons@gmail.com,+44(0)306 999 0509,50,72,False,Low score
+Michelle Allen,michelleallen@yahoo.com,(029)2018290,74,79,True,
+Carol Connolly,carolconnolly@yahoo.com,+44(0)9098790002,63,77,True,
+Leah Woods,leahwoods@hotmail.com,(0114) 496 0472,70,77,True,
+Leigh Smith,leighsmith@yahoo.com,+44(0)1184960603,56,77,False,Low score
+Toby Parkinson,tobyparkinson@hotmail.com,(0118)4960690,86,94,True,
+William Moss,williammoss@yahoo.com,(0116) 4960857,72,89,True,
+Ross Barnes,rossbarnes@yahoo.com,+44(0)117 4960625,65,69,False,Low attendance
+Elaine Hudson,elainehudson@yahoo.com,+441632 960 269,82,76,True,
+Kate Gray,kategray@gmail.com,(028)9018155,78,87,True,
+Richard Graham,richardgraham@hotmail.com,+441632960199,87,97,True,
+Callum Cooper,callumcooper@gmail.com,(0116) 4960367,58,71,False,Low score
+Joshua Hall,joshuahall@gmail.com,(0191) 4960916,67,66,False,Low attendance
+Dominic Patel,dominicpatel@gmail.com,0131 496 0732,50,77,False,Low score
+Louis Kelly,louiskelly@yahoo.com,+44(0)8081570483,79,98,True,
+Louise Morgan,louisemorgan@yahoo.com,+44(0)1164960066,66,75,True,
+Beverley Smith,beverleysmith@yahoo.com,(0114) 4960354,92,80,True,
+Anne O'Donnell,anneo'donnell@yahoo.com,(028) 9018328,95,67,False,Low attendance
+Paige Jones,paigejones@gmail.com,01632 960 807,61,87,True,
+Guy Turnbull,guyturnbull@gmail.com,+44(0)115 4960631,82,71,True,
+Simon Charlton,simoncharlton@yahoo.com,+441154960903,99,97,True,
+Julie Ahmed,julieahmed@yahoo.com,+449098790076,88,85,True,
+Samantha Powell,samanthapowell@gmail.com,+441134960649,82,83,True,
+Nathan Lloyd,nathanlloyd@yahoo.com,01164960219,71,73,True,
+Wendy Bird,wendybird@gmail.com,+44191 4960236,99,94,True,
+Samuel Tucker,samueltucker@gmail.com,(0114) 496 0570,96,81,True,
+Bethany Gill,bethanygill@hotmail.com,01314960473,94,95,True,
+Annette Green,annettegreen@gmail.com,0161 496 0932,96,65,False,Low attendance
+Wendy Knight,wendyknight@yahoo.com,0113 496 0909,74,83,True,
+Sian Reeves,sianreeves@gmail.com,+44(0)28 9018787,65,73,True,
+Fiona Patel,fionapatel@hotmail.com,028 9018 0759,90,66,False,Low attendance
+Pamela Hunt,pamelahunt@yahoo.com,01174960885,78,99,True,
+Janice Lewis,janicelewis@yahoo.com,+44151 4960655,61,73,True,
+Roger Collier,rogercollier@yahoo.com,+441164960266,65,88,True,
+Abbie Barber,abbiebarber@yahoo.com,(0306) 9990112,60,74,True,
+Tony Thompson,tonythompson@hotmail.com,+44(0)20 7496 0758,94,93,True,
+Maureen Walker,maureenwalker@hotmail.com,+44909 879 0140,96,70,True,
+Barry Goodwin,barrygoodwin@yahoo.com,(0191) 496 0345,92,83,True,
+Bradley Begum,bradleybegum@hotmail.com,+44306 9990233,77,83,True,
