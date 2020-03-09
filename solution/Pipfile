@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+pytest = "*"
+pytest-flask = "*"
+
+[packages]
+dash = "==1.9.0"
+gunicorn = "*"
+pandas = "*"
+pandas-datareader = "*"
+numpy = "*"
+plotly = "*"
+flask = "*"
+requests = "*"
+flask-cors = "*"
+psycopg2-binary = "*"
+flask-restplus = "*"
+python-dotenv = "*"
+dash-bootstrap-components = "*"
+
+[requires]
+python_version = "3.7"
