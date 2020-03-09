@@ -3,6 +3,8 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 from app import dash_app
+from app import server
+
 from dash_apps.app1.dboard import layout as lay1
 from dash_apps.app2.dboard import layout as lay2
 
