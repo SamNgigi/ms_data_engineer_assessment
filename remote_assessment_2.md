@@ -1,8 +1,11 @@
 # Remote assessment 2 
 ## Background
-Hogwarts School of Magic has been storing data about their courses and students in spreadsheet, they need a data engineer to store this information in a relational database and create a dashboard for them with basic insights such as total students, dropouts etc. There are things a magic wand can't fix.
+Hogwarts School of Magic has been storing data about their courses and students in spreadsheet, they need a data engineer to transfer this to a relational database and create a dashboard for them with basic insights such as total students, dropouts etc. There are things Dumbledore's magic wand can't fix.
 
 ## Description
+
+**Your task is to write an ETL pipeline to fetch the data from google sheets, clean & process, store it in a relational database and create a simple dashboard to visualize the data.**
+
 You have been provided with 3 spreadsheets
 
 1. [hogwarts_admissions](https://docs.google.com/spreadsheets/d/1lKrQ4NKwogywiDqnNuwva4zDVNi18x2BClQ6ugFU7SQ/edit?usp=sharing)

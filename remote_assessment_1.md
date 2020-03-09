@@ -3,6 +3,9 @@
 Melon University Of Technology wants to do an analysis of tech jobs in the kenyan market. You have been tasked to create a tool that will scrape this jobs from specific job providers, persist them and create a dashboard to show basic insights such as no. of jobs etc.
 
 ## Description
+
+**Your task is to write an ETL pipeline to fetch the data fro 3 job providers, clean & process the data, store it in a relational database and create a simple dashboard to visualize the data.**
+
 ### Scrape
 First scrape **tech/it** jobs from the following providers
 1. Ihub
