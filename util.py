@@ -127,7 +127,7 @@ def generate_fake_data():
         all_applicants += applications_copy
         applications_copy = []
     # dump all applicants
-    csv_dict_write('cc',all_applicants)
+    csv_dict_write('data/assessment_2/all_applications.csv',all_applicants)
 
     # dump accepted
     for k,v in class_students.items():
