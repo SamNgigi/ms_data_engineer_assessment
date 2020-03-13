@@ -25,7 +25,7 @@ class ApplicationsSql(AbstractModel):
         else:
             save_sql = """
                 INSERT INTO applications(person_id, class_id, date) VALUES\
-                (%s, %s, %s, %s) RETURNING id, person_id, class_id, date
+                (%s, %s, %s) RETURNING id, person_id, class_id, date
             """
             application_params = (application_object.person_id, application_object.class_id,
                              application_object.date)
@@ -66,6 +66,15 @@ class ApplicationsSql(AbstractModel):
         # class_lst = []
 
         return all_classes
+        
 
+    def update_by_id(self):
+        pass
+
+    def delete_by_id(self):
+        pass
+
+    def clear_all(self):
+        pass
 
 

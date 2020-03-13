@@ -16,11 +16,15 @@ class AllApplicationsResource(AbstractSpreadSheetResource):
         }
 
     def parse_allApplications(self, sheet_name, applications_df)->pd.DataFrame:
+        applications_df[['first_name', 'last_name']] = applications_df['name'].str.split(
+            pat=' ', expand=True)[[0, 1]]
         return applications_df
 
 
     def store(self):
         people_sql = PeopleSql()
+        classes_sql = ClassesSql()
+        applications_sql = ApplicationsSql()
         # self.parsed_data is dict of sheets-names and dataframes
         clean_resource = self.parsed_data
 
@@ -33,15 +37,28 @@ class AllApplicationsResource(AbstractSpreadSheetResource):
                 phone = entry.get('phone')
                 email = entry.get('email')
                 gender = entry.get('gender')
-                class_ = entry.get('class')
+                class_name = entry.get('class')
                 date = entry.get('date')
 
-                people_obj = PeopleSql(
+                person_instance = People(
                     first_name, last_name, phone, email, gender)
-                people_sql.save(people_obj)
+                people_sql.save(person_instance)
+
+                person_obj = people_sql.get_by_email(email)
+                class_obj = classes_sql.get_by_name(class_name)
+
+                application_instance = Applications(
+                    person_obj['id'], class_obj['id'], date)
+                applications_sql.save(application_instance)
+
+
+
+
+
+                
     
 
 # TODO
 # *1. Feature engineer first and last name from peoples
-# *2. Get people by last name and assign id to application
+# *2. Get people by email and assign id to application
 # *3 Get class by name and assign to application

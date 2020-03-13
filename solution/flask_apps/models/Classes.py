@@ -55,14 +55,14 @@ class ClassesSql(AbstractModel):
         sql = """
             SELECT * FROM classes WHERE id = %s
         """
-        fetched_class = self.db_handler.fetch(sql, params=(id,), one=True)
+        fetched_class = self.db_handler.fetch_dict(sql, params=(id,), one=True)
         return fetched_class
 
     def get_by_name(self, name):
         sql = """
             SELECT * FROM classes WHERE class_name = %s
         """
-        fetched_class = self.db_handler.fetch(sql, params=(name,), one=True)
+        fetched_class = self.db_handler.fetch_dict(sql, params=(name,), one=True)
         return fetched_class
 
     def get_all(self) -> list:

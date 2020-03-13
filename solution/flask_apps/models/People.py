@@ -22,14 +22,14 @@ class PeopleSql(AbstractModel):
 
     def save(self, people_object):
 
-        person_exists = self.get_by_id(people_object.id)
+        person_exists = self.get_by_email(people_object.email)
 
         if person_exists:
             print({"message": "Person aleady exists"})
         else:
             save_sql = """
                 INSERT INTO peoples(first_name, last_name, phone, email, gender) VALUES\
-                (%s, %s, %s, %s) RETURNING id, first_name, last_name, phone
+                (%s, %s, %s, %s, %s) RETURNING id, first_name, last_name, phone
             """
             people_params = (people_object.first_name, people_object.last_name,
                             people_object.phone, people_object.email, people_object.gender)
@@ -57,14 +57,14 @@ class PeopleSql(AbstractModel):
         sql = """
             SELECT * FROM peoples WHERE id = %s
         """
-        fetched_class = self.db_handler.fetch(sql, params=(id,), one=True)
+        fetched_class = self.db_handler.fetch_dict(sql, params=(id,), one=True)
         return fetched_class
 
-    def get_by_name(self, name):
+    def get_by_email(self, email):
         sql = """
-            SELECT * FROM peoples WHERE last_name = %s
+            SELECT * FROM peoples WHERE email = %s
         """
-        fetched_class = self.db_handler.fetch(sql, params=(name,), one=True)
+        fetched_class = self.db_handler.fetch_dict(sql, params=(email,), one=True)
         return fetched_class
 
     def get_all(self) -> list:
