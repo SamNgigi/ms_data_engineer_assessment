@@ -1,3 +1,4 @@
+import os
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
@@ -30,6 +31,7 @@ def display_page(pathname):
         return lay2
     else:
         return layout_index
+
 
 if __name__ == '__main__':
     dash_app.run_server(debug=True)

@@ -23,6 +23,10 @@ psycopg2-binary = "*"
 flask-restplus = "*"
 python-dotenv = "*"
 dash-bootstrap-components = "*"
+oauth2client = "*"
+pyopenssl = "*"
+gspread = "*"
+flask-script = "*"
 
 [requires]
 python_version = "3.7"
