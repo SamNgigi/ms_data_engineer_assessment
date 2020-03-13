@@ -131,6 +131,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+credentials.json
+credentials1.json
+gspread-270619-05d12e0e0262.json
 
 # Spyder project settings
 .spyderproject

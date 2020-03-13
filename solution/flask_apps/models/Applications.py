@@ -33,7 +33,7 @@ class ApplicationsSql(AbstractModel):
             application_obj = self.db_handler.insert_update(save_sql, application_params)
 
             if not application_obj:
-                print("Could not add classes", psycopg2.DatabaseError)
+                print("Could not add applications", psycopg2.DatabaseError)
 
             application_object.id = application_obj[0]
             application_instance = {
@@ -51,14 +51,14 @@ class ApplicationsSql(AbstractModel):
 
     def get_by_id(self, id):
         sql = """
-            SELECT * FROM classes WHERE id = %s
+            SELECT * FROM applications WHERE id = %s
         """
         fetched_class = self.db_handler.fetch(sql, params=(id,), one=True)
         return fetched_class
 
     def get_all(self) -> list:
         sql = """
-            SELECT * FROM classes
+            SELECT * FROM applications
         """
 
         all_classes = self.db_handler.fetch_dict(sql, one=False)

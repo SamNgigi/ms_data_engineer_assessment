@@ -18,7 +18,7 @@ class MapResources(Command):
     def run(self):  # pylint: disable=E0202
         gsheet_resources = [
             AllApplicationsResource(),
-            # ClassResource(),
+            ClassResource(),
             # StudentsClassResource(),
             # ModulesResource(),
             # BaseClassByModuleRes(),
