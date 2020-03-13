@@ -16,34 +16,34 @@ class ApplicationsSql(AbstractModel):
 
     db_handler = PostgresDBService()
 
-    def save(self, applications_obj):
+    def save(self, application_object):
 
-        person_exists = self.get_by_id(application_object.id)
+        application_exists = self.get_by_id(application_object.id)
 
-        if person_exists:
-            print({"message": "Person aleady exists"})
+        if application_exists:
+            print({"message": "Application aleady exists"})
         else:
             save_sql = """
-                INSERT INTO classes(fperson_id, class_id, date) VALUES\
+                INSERT INTO applications(person_id, class_id, date) VALUES\
                 (%s, %s, %s, %s) RETURNING id, person_id, class_id, date
             """
-            people_params = (application_object.first_name, application_object.last_name,
-                             application_object.phone)
+            application_params = (application_object.person_id, application_object.class_id,
+                             application_object.date)
 
-            people_obj = self.db_handler.insert_update(save_sql, people_params)
+            application_obj = self.db_handler.insert_update(save_sql, application_params)
 
-            if not people_obj:
+            if not application_obj:
                 print("Could not add classes", psycopg2.DatabaseError)
 
-            application_object.id = people_obj[0]
-            people_instance = {
-                "id": people_obj[0],
-                "first_name": people_obj[1],
-                "last_name": people_obj[2]
+            application_object.id = application_obj[0]
+            application_instance = {
+                "id": application_obj[0],
+                "person_id": application_obj[1],
+                "class_id": application_obj[2]
             }
             print({
-                "message": "Classes added successfully",
-                "category_added": people_instance,
+                "message": "Application added successfully",
+                "category_added": application_instance,
                 "status": 200
             })
         # TODO - Ask jack if this is necessary especially condidering the with context

@@ -46,7 +46,7 @@ class PeopleSql(AbstractModel):
                 "last_name": people_obj[2]
             }
             print({
-                "message": "Classes added successfully",
+                "message": "Person added successfully",
                 "category_added": people_instance,
                 "status": 200
             })
