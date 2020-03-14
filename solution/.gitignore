@@ -20,6 +20,8 @@ credentials.json
 # Icon must end with two \r
 Icon
 
+ms_eng.dump
+
 # Thumbnails
 ._*
 
