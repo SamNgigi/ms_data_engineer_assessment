@@ -1,4 +1,6 @@
 import abc
+import pandas as pd
+import psycopg2 
 
 
 class AbstractModel(abc.ABC):
@@ -16,6 +18,10 @@ class AbstractModel(abc.ABC):
 
     @abc.abstractmethod
     def get_all(self)->list:
+        pass
+    
+    @abc.abstractmethod
+    def get_df(self)->pd.DataFrame:
         pass
     
     @abc.abstractmethod

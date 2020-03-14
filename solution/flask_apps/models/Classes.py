@@ -1,6 +1,7 @@
 # from flask import jsonify, json
 from ..services.db.db_handler import PostgresDBService
 import psycopg2 
+import pandas as pd
 
 from .AbstractModel import AbstractModel
 
@@ -75,6 +76,16 @@ class ClassesSql(AbstractModel):
         # class_lst = []
 
         return all_classes
+
+    def get_df(self)->pd.DataFrame:
+
+        sql = """
+            SELECT * FROM classes
+        """
+
+        class_df = self.db_handler.fetch_df(sql)
+
+        return class_df
 
 
 

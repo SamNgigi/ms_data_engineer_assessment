@@ -6,7 +6,7 @@ from .gspread_service import GspreadService
 import pandas as pd
 
 gsheets_dict = {
-    'admissions': '1ZtGa3ykeYOK_WvE7JHoGX_zvFE4drfaHVTqtKWZ69L8',
+    'admissions': '1zG8i_IqstrIenDAmQTtgdZ7lILKHY5x_v8jHKgkyDcs',
     'enrollments': '18tvRHT4qy15cSnC9tkrs5I1GkDfqzjC3LFaaUuy6jPg',
     'outcomes': '1yN-9oTIuF69w57oTzvQpEbfd3fmmRKnhhNvBUKJXdnc'
 }

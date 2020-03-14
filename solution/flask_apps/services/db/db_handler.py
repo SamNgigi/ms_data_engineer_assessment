@@ -7,6 +7,8 @@ import psycopg2.extras
 from psycopg2 import Error
 from config import configs
 
+import pandas as pd
+
 
 class AbstractDatabaseService(abc.ABC):
 
@@ -18,7 +20,7 @@ class AbstractDatabaseService(abc.ABC):
 class PostgresDBService(AbstractDatabaseService):
 
     def __init__(self):
-        self.connection = psycopg2.connect(configs['dev'].DATABASE_URI) 
+        self.connection = psycopg2.connect(configs['prod'].DATABASE_URL) 
 
     def execute_sql(self, sql, params=None, commit=True):
         with self.connection.cursor() as cursor:
@@ -40,6 +42,15 @@ class PostgresDBService(AbstractDatabaseService):
             if one:
                 return cursor.fetchone()
             return cursor.fetchall()
+
+
+    def fetch_df(self, sql)->pd.DataFrame:
+
+        with self.connection as conn:
+            df = pd.read_sql_query(sql, conn)
+
+            return df
+
         
 
     def insert_update(self, sql, params=None, batch=False, returning=False):

@@ -18,18 +18,18 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    DATABASE_URI = os.getenv('DEV_DB_URL') or \
+    DATABASE_URL = os.getenv('DEV_DB_URL') or \
         'sqlite:///' + os.path.join(basedir, 'dev-db.sqlite')
 
 
 class TestingConfig(Config):
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = os.getenv('TEST_DB_URL') or \
+    DATABASE_URL = os.getenv('TEST_DB_URL') or \
         'sqlite:///' + os.path.join(basedir, 'test-db.sqlite')
 
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.getenv('DB_URL') or \
+    DATABASE_URL = os.getenv('DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'data.sqlite')
 
 

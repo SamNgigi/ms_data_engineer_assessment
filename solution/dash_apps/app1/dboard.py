@@ -2,17 +2,22 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
+import plotly.graph_objs as go
+
 import pandas as pd
 
-
 from app import dash_app
+
+from flask_apps.models.Applications import ApplicationsSql
+
+from ..visualization_data import graduates, class_applications
 
 df = pd.read_csv(
     'https://gist.githubusercontent.com/chriddyp/5d1ea79569ed194d432e56108a04d188/raw/a9f9e8076b837d541398e999dcbac2b2826a81f8/gdp-life-exp-2007.csv')
 
 
 layout = html.Div([
-    dcc.Graph(
+    html.Div([dcc.Graph(
         id='life-exp-vs-gdp',
         figure={
             'data': [
@@ -37,5 +42,21 @@ layout = html.Div([
                 hovermode='closest'
             )
         }
+    )],style={'width': '50%', 'display': 'inline-block'}),
+    html.Div([dcc.Graph(
+        id='crime-stacked',
+        figure={
+            'data': [go.Bar(
+                x=['graduates', 'applicants'],
+                y=[(graduates.shape[0]/(graduates.shape[0] + class_applications.shape[0])*100),
+                    (class_applications.shape[0]/(graduates.shape[0] + class_applications.shape[0])*100)],
+                name='graduates',
+                marker_color='rgb(26, 118, 255)')],
+
+         			'layout': go.Layout(
+                title='Applicants vs Graduates'
+            )
+        }
     )
+    ], style={'width': '50%', 'display': 'inline-block'})
 ])

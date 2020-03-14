@@ -17,12 +17,12 @@ class MapResources(Command):
     
     def run(self):  # pylint: disable=E0202
         gsheet_resources = [
-            AllApplicationsResource(),
-            ClassResource(),
+            # AllApplicationsResource(),
+            # ClassResource(),
             # StudentsClassResource(),
             # ModulesResource(),
             # BaseClassByModuleRes(),
-            # OutcomesResource()
+            OutcomesResource()
         ]
 
         for gsheet_res in gsheet_resources:

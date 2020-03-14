@@ -8,10 +8,14 @@ from app import dash_app
 
 import pandas as pd
 
+
+
 crimedata = pd.read_csv(
 	'https://raw.githubusercontent.com/itsimplified/dash-web-app/master/crimedata.csv')
 features = crimedata.columns
 crimetypes = features[:-1]
+
+
 
 #add markdown text
 markdown_text = """

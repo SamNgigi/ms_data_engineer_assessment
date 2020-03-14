@@ -1,6 +1,8 @@
 from ..services.db.db_handler import PostgresDBService
 import psycopg2
 
+import pandas as pd
+
 from .AbstractModel import AbstractModel
 
 
@@ -61,11 +63,20 @@ class ApplicationsSql(AbstractModel):
             SELECT * FROM applications
         """
 
-        all_classes = self.db_handler.fetch_dict(sql, one=False)
+        all_applications = self.db_handler.fetch_dict(sql, one=False)
 
         # class_lst = []
 
-        return all_classes
+        return all_applications
+
+    def get_df(self)->pd.DataFrame:
+        sql = """
+            SELECT * FROM applications
+        """
+
+        applications_df = self.db_handler.fetch_df(sql)
+
+        return applications_df
         
 
     def update_by_id(self):

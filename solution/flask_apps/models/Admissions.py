@@ -1,13 +1,15 @@
 from ..services.db.db_handler import PostgresDBService
 import psycopg2
 
+import pandas as pd
+
 from .AbstractModel import AbstractModel
 
 
 class Admissions:
 
     def __init__(self, person_id, class_id):
-        self.id = -1
+        self.id = None
         self.person_id = person_id
         self.class_id = class_id
 
@@ -61,11 +63,20 @@ class AdmissionsSql(AbstractModel):
             SELECT * FROM admissions
         """
 
-        all_classes = self.db_handler.fetch_dict(sql, one=False)
+        all_admissions = self.db_handler.fetch_dict(sql, one=False)
 
         # class_lst = []
 
-        return all_classes
+        return all_admissions
+
+    def get_df(self) -> pd.DataFrame:
+        sql = """
+            SELECT * FROM admissions
+        """
+
+        admissions_df = self.db_handler.fetch_df(sql)
+
+        return admissions_df
 
     def update_by_id(self):
         pass

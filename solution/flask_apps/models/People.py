@@ -1,6 +1,7 @@
 # from flask import jsonify, json
 from ..services.db.db_handler import PostgresDBService
 import psycopg2
+import pandas as pd
 
 from .AbstractModel import AbstractModel
 
@@ -72,11 +73,20 @@ class PeopleSql(AbstractModel):
             SELECT * FROM peoples
         """
 
-        all_classes = self.db_handler.fetch_dict(sql, one=False)
+        all_peoples = self.db_handler.fetch_dict(sql, one=False)
 
         # class_lst = []
 
-        return all_classes
+        return all_peoples
+
+    def get_df(self) -> pd.DataFrame:
+        sql = """
+            SELECT * FROM peoples
+        """
+
+        peoples_df = self.db_handler.fetch_df(sql)
+
+        return peoples_df
 
     def update_by_id(self):
         pass
