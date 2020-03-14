@@ -17,7 +17,7 @@ dash_app.layout = html.Div([
 ])
 
 layout_index = html.Div([
-    dcc.Link('Navigate to "/page-1"', href=''),
+    dcc.Link('Navigate to "/page-1"', href='/'),
     html.Br(),
     dcc.Link('Navigate to "/page-2"', href='/app2'),
 ])
@@ -25,12 +25,12 @@ layout_index = html.Div([
 @dash_app.callback(Output('page-content', 'children'),
                  [Input('url', 'pathname')])
 def display_page(pathname):
-    if pathname=='':
+    if pathname=='/':
         return lay1
     elif pathname=='/app2':
         return lay2
     else:
-        return layout_index
+        return lay1
 
 
 if __name__ == '__main__':

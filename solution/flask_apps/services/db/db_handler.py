@@ -20,7 +20,7 @@ class AbstractDatabaseService(abc.ABC):
 class PostgresDBService(AbstractDatabaseService):
 
     def __init__(self):
-        self.connection = psycopg2.connect(configs['prod'].DATABASE_URL) 
+        self.connection = psycopg2.connect(configs['dev'].DATABASE_URL) 
 
     def execute_sql(self, sql, params=None, commit=True):
         with self.connection.cursor() as cursor:
