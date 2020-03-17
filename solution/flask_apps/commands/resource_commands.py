@@ -20,9 +20,9 @@ class MapResources(Command):
             # AllApplicationsResource(),
             # ClassResource(),
             # StudentsClassResource(),
-            # ModulesResource(),
+            ModulesResource(),
             # BaseClassByModuleRes(),
-            OutcomesResource()
+            # OutcomesResource()
         ]
 
         for gsheet_res in gsheet_resources:

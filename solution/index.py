@@ -8,6 +8,7 @@ from app import server
 
 from dash_apps.app1.dboard import layout as lay1
 from dash_apps.app2.dboard import layout as lay2
+from dash_apps.app3.layout import layout3 as lay3
 
 
 
@@ -29,6 +30,8 @@ def display_page(pathname):
         return lay1
     elif pathname=='/app2':
         return lay2
+    elif pathname=='/app3':
+        return lay3
     else:
         return lay1
 

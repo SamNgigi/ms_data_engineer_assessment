@@ -22,6 +22,10 @@ admissions_df = admissionsSql.get_df()
 peoples_df = peoples_sql.get_df()
 
 
+gapminder = pd.read_csv(
+    'https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv')
+
+
 # Converting date string to datetime object
 applications_df['date'] = pd.to_datetime(applications_df['date'])
 # Extracting year
@@ -59,6 +63,14 @@ admitted_students = pd.merge(admissions_df, classes_df[[
                              'class_id', 'class_name']], how='inner', on='class_id')
 admitted_students = pd.merge(admitted_students, peoples_df[[
                              'person_id', 'gender']], how='inner', on='person_id')
+
+
+# *Applicant name with class applied to
+app_include = ["person_id", "class_name", "gender", "year"]
+people_include = ["person_id", "first_name", "last_name", "phone", "email"]
+people_class = pd.merge(
+    peoples_df[people_include], class_applications[app_include], how='inner', on='person_id')
+# people_class.head()
 
 
 
