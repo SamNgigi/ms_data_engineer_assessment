@@ -24,17 +24,17 @@ class EnrollmentsSql(AbstractModel):
 
     def save(self, enrollment_object):
 
-        enrollment_exists = self.get_by_name(enrollment_object.name)
+        enrollment_exists = self.get_by_id(enrollment_object.id)
 
         if enrollment_exists:
             print({"message": "Module already exists"})
         else:
             save_sql = """
                 INSERT INTO enrollments(person_id, class_id, module_id, score, attendance, passed, dropped_reason) VALUES\
-                    (%s, %s, %s) RETURNING id, person_id, class_id, module_id, score
+                    (%s, %s, %s, %s, %s, %s, %s) RETURNING id, person_id, class_id, module_id, score
             """
-            enrollment_params = (enrollment_object.name,
-                             enrollment_object.position, enrollment_object.weeks)
+            enrollment_params = (enrollment_object.person_id, enrollment_object.class_id, enrollment_object.module_id,
+                                 enrollment_object.score, enrollment_object.attendance, enrollment_object.passed, enrollment_object.dropped_reason)
             enrollment_obj = self.db_handler.insert_update(save_sql, enrollment_params)
 
             if not enrollment_obj:

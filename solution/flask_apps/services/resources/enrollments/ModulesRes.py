@@ -33,6 +33,13 @@ class ModulesResource(AbstractSpreadSheetResource):
                 module_obj = Modules(module_name, module_postion, module_weeks)
                 modules_sql.save(module_obj)
 
+"""  
+TODO
+2. Create enrollment table on dashboard
+3. Update remote db with module & enrollment data
+4. Add drop out rate table & visualization.
+"""
+
 
 
 

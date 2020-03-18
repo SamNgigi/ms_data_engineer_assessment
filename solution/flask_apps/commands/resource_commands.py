@@ -20,8 +20,8 @@ class MapResources(Command):
             # AllApplicationsResource(),
             # ClassResource(),
             # StudentsClassResource(),
-            ModulesResource(),
-            # BaseClassByModuleRes(),
+            # ModulesResource(),
+            BaseClassByModuleRes(),
             # OutcomesResource()
         ]
 
