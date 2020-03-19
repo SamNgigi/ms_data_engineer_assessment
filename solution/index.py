@@ -2,6 +2,7 @@ import os
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
+import dash_bootstrap_components as dbc
 
 from app import dash_app
 from app import server
@@ -11,7 +12,6 @@ from dash_apps.app2.dboard import layout as lay2
 
 from dash_apps.app3.layout import layout3 as lay3
 import dash_apps.app3.callbacks as callback
-
 
 
 
@@ -37,6 +37,9 @@ def display_page(pathname):
         return lay3
     else:
         return lay1
+
+
+
 
 
 if __name__ == '__main__':
