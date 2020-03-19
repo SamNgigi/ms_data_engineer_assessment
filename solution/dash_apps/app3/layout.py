@@ -5,7 +5,7 @@ import dash_table as dt
 import pandas as pd
 
 # Data
-from ..visualization_data import people_class, gapminder, people_enrolled_final
+from ..visualization_data import people_class, gapminder, people_enrolled_final, graduate_persons
 
 
 PAGE_SIZE = 50
@@ -13,7 +13,7 @@ PAGE_SIZE = 50
 common_style = {'width': '50%', 'display': 'inline-block'}
 
 
-# *VISUALIZATION 1
+# *TABLE 1
 applicant_datatable = html.Div([
 
     html.H5(
@@ -48,7 +48,7 @@ applicant_datatable = html.Div([
     )
 ], style={"padding":"50px"})
 
-# *VISUALIZATION 2
+# *TABLE 2
 enrollment_datatable = html.Div([
 
     html.H5(
@@ -59,7 +59,7 @@ enrollment_datatable = html.Div([
     ),
 
     html.P(
-        children='Filter by class',
+        children='Filter by class or/and module',
         style={
             'textAlign': 'center',
         }
@@ -83,7 +83,43 @@ enrollment_datatable = html.Div([
     )
 ], style={"padding": "50px"})
 
-# *VISUALIZATION 3
+
+# *TABLE 3
+graduate_datatable = html.Div([
+
+    html.H5(
+        children='Graduates table filterable by class',
+        style={
+            'textAlign': 'center',
+        }
+    ),
+
+    html.P(
+        children='Filter table by class',
+        style={
+            'textAlign': 'center',
+        }
+    ),
+
+    dt.DataTable(
+        id="table",
+        columns=[{"name": col_name, "id": col_name}
+                 for col_name in graduate_persons.columns],
+        data=graduate_persons.to_dict("records"),
+        fixed_rows={'headers': True, 'data': 0},
+        style_header={
+            "backgroundColor": "rgb(230, 230, 230)", "fontWeight": "bold"},
+        style_cell={"textAlign": "left", "maxWidth": 0},
+        style_table={
+            'marginTop': '30px',
+            'maxHeight': '300px',
+            'overflowY': 'scroll'
+        },
+        filter_action="native"
+    )
+], style={"padding": "50px"})
+
+# *VISUALIZATION 1
 gapminder_lay = html.Div([
     html.Label('Select Module'),
     dcc.Dropdown(
@@ -106,7 +142,7 @@ gapminder_lay = html.Div([
     )
 ], style=common_style)
 
-# *VISUALIZATION 4
+# *VISUALIZATION 2
 hogwarts_yr = html.Div([
     html.Label('Select Hogwarts Cohort'),
     dcc.Dropdown(
@@ -134,11 +170,13 @@ layout3 = html.Div([
 
 #     
 
-    # *VISUALIZATION 3
+    # *TABLE 1
     applicant_datatable,
     
-    # *VISUALIZATION 4
+    # *TABLE 2
     enrollment_datatable,
+    # *TABLE 3
+    graduate_datatable,
 
     html.Div([
         # *VISUALIZATION 1

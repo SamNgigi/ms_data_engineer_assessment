@@ -39,12 +39,14 @@ def update_figure(selected_cohort):
             go.Bar(
                 x=filtered_df['module_name'],
                 y=filtered_df['mod_count'],
+                text=round((max(filtered_df['mod_count']) -filtered_df['mod_count'])/ max(filtered_df['mod_count']), 2) * 100,
+                textposition='auto',
                 marker_color='rgb(26, 118, 255)'
             )
         ],
         'layout': go.Layout(
             xaxis={'title': 'Module Name'},
             yaxis={'title': f'{selected_cohort} per module count'},
-            title='Total Student Count per Class by module'
+            title='Total Student Count & % drop per Class by module'
         )
     }

@@ -51,7 +51,7 @@ layout = html.Div([
         }
     ),
 
-    html.Div(children='This dashboard was created for the MS data-engineering assesment. It is still a development.', style={
+    html.Div(children='This dashboard was created for the MS data-engineering assesment. It is still in development.', style={
         'textAlign': 'center',
     }),
 

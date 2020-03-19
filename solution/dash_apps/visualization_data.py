@@ -70,6 +70,13 @@ graduates = pd.merge(
 graduates = pd.merge(
     graduates, peoples_df[['person_id', 'gender']], how='inner', on='person_id')
 graduates.head()
+graduate_persons = pd.merge(graduates, peoples_df[['person_id', 'first_name', 'last_name', 'email']],
+                            how='inner', on='person_id').drop(['class_id', 'end_date', 'id'], axis=1)
+
+# *Graduates with personal information                            
+graduate_persons = graduate_persons[[
+    'first_name', 'last_name', 'email', 'class_name', 'gender']]
+
 
 # *Import this to dboard
 admitted_students = pd.merge(admissions_df, classes_df[[
@@ -101,8 +108,8 @@ modulebyClass = people_enrolled_final.groupby(
     ['class_name', 'module_name']).size().to_frame(name="mod_count").reset_index()
 modulebyClass = pd.merge(modulebyClass, classes_df[[
                          "class_id", "class_name"]], how="inner", on="class_name")
-modulebyClass.sort_values('class_id', inplace=True)
-
+modulebyClass = pd.merge(modulebyClass, modules_df[["module_id", "module_name"]], how="inner", on="module_name")
+modulebyClass.sort_values(['class_id', 'module_id'], inplace=True)
 
 
 
