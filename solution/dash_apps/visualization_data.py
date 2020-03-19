@@ -97,6 +97,11 @@ people_enrolled_col_order = ["id", "first_name", "last_name", "phone", "email",
 people_enrolled_final = people_enrolled[people_enrolled_col_order]
 
 
+modulebyClass = people_enrolled_final.groupby(
+    ['class_name', 'module_name']).size().to_frame(name="mod_count").reset_index()
+modulebyClass = pd.merge(modulebyClass, classes_df[[
+                         "class_id", "class_name"]], how="inner", on="class_name")
+modulebyClass.sort_values('class_id', inplace=True)
 
 
 

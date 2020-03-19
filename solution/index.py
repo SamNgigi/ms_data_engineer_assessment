@@ -8,7 +8,10 @@ from app import server
 
 from dash_apps.app1.dboard import layout as lay1
 from dash_apps.app2.dboard import layout as lay2
+
 from dash_apps.app3.layout import layout3 as lay3
+import dash_apps.app3.callbacks as callback
+
 
 
 

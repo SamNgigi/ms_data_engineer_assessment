@@ -87,12 +87,13 @@ enrollment_datatable = html.Div([
 gapminder_lay = html.Div([
     html.Label('Select Module'),
     dcc.Dropdown(
-        id='cohort-year-col',
+        id='cohort-module-col',
         options=[{"label": col_val, "value": col_val}
-                 for col_val in people_enrolled_final['module_name'].unique()]
+                 for col_val in people_enrolled_final['module_name'].unique()],
+        value="charms"
     ),
     # Ouput graph
-    dcc.Graph(id='graph-with-slider'),
+    dcc.Graph(id='module-class-count'),
 
     # Gapminder slider
     dcc.Slider(
@@ -111,10 +112,11 @@ hogwarts_yr = html.Div([
     dcc.Dropdown(
         id='cohort-col',
         options=[{"label": col_val, "value": col_val}
-                 for col_val in people_class['class_name'].unique()]
+                 for col_val in people_class['class_name'].unique()],
+        value='HC_1'
     ),
 
-    dcc.Graph(id='hogwarts-slider'),
+    dcc.Graph(id='hogwarts-cohort'),
 
     dcc.Slider(
         id='hogwarts-year-slider',

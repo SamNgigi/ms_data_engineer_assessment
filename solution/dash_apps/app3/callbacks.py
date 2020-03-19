@@ -1,46 +1,50 @@
 from dash.dependencies import Input, Output
+import plotly.graph_objs as go
 
 from app import dash_app
-from ..visualization_data import people_class, gapminder
+from ..visualization_data import people_class, gapminder, modulebyClass
 
-@dash_app.callback(
-    Output('gap-with-slider', 'figure'),
-    [Input('year-slider', 'value')]
-)
-def update_figure(selected_year):
-    filtered_df = gapminder[gapminder.year == selected_year]
-    traces = []
-    for ucontinent in filtered_df['continent'].unique():
-        df_by_continent = filtered_df[filtered_df['continent'] == ucontinent]
-        traces.append(dict(
-            x = df_by_continent['gdpPercap'],
-            y=df_by_continent['lifeExp'],
-            mode='markers',
-            opacity=.7,
-            marker = {
-                'size': 15,
-                'line': {"width": .5, "color": 'white'}
-                },
-            name=ucontinent
-        ))
+
+@dash_app.callback(Output('module-class-count', 'figure'),
+                  [Input('cohort-module-col', 'value')])
+def update_graph(selected_module):
+    filtered_df = modulebyClass[modulebyClass['module_name'] == selected_module]
 
     return {
-        'data': traces,
-        'layout': dict(
-            xaxis={'type': 'log', 'title': 'GDP Per Capita',
-                   'range': [2.3, 4.8]},
-            yaxis={'title': 'Life Expectancy', 'range': [20, 90]},
-            margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
-            legend={'x': 0, 'y': 1},
-            hovermode="closest",
-            transition={"duration": 500}
+        'data': [
+            go.Bar(
+                x=filtered_df['class_name'],
+                y=filtered_df['mod_count'],
+                marker_color='rgb(26, 118, 255)'
+            )
+        ],
+        'layout': go.Layout(
+            xaxis={'title': 'Class name'},
+            yaxis={'title': f'{selected_module} module count'},
+            title='Total Student Count per Class by module'
         )
     }
 
-# @dash_app.callback(
-#     Output('table', 'data'),
-#     [Input('table', "page_current"),
-#      Input('table', "page_size")]
-# )
-# def update_table(page_current, page_size):
-#     return df.iloc[page_current*page_size : (page_current + 1) * page_size].to_dict('records')
+
+@dash_app.callback(
+    Output('hogwarts-cohort', 'figure'),
+    [Input('cohort-col', 'value')]
+)
+def update_figure(selected_cohort):
+    filtered_df = modulebyClass[modulebyClass['class_name']
+                                == selected_cohort]
+
+    return {
+        'data': [
+            go.Bar(
+                x=filtered_df['module_name'],
+                y=filtered_df['mod_count'],
+                marker_color='rgb(26, 118, 255)'
+            )
+        ],
+        'layout': go.Layout(
+            xaxis={'title': 'Module Name'},
+            yaxis={'title': f'{selected_cohort} per module count'},
+            title='Total Student Count per Class by module'
+        )
+    }
