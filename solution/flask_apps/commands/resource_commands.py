@@ -21,8 +21,8 @@ class MapResources(Command):
             # ClassResource(),
             # StudentsClassResource(),
             # ModulesResource(),
-            # BaseClassByModuleRes(),
-            OutcomesResource()
+            BaseClassByModuleRes(),
+            # OutcomesResource()
         ]
 
         for gsheet_res in gsheet_resources:
